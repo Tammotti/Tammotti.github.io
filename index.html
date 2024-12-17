@@ -11,7 +11,10 @@
   </head>
   <body>
     <h1>Onko bebelssoni jo syntynyt?</h1>
-    <spoiler>Ei.</spoiler>
-    <img src="docs/assets/images/sylvi.jpg" width="500" height="600">
+    <button title="vastaus" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Vastaus</button>
+    <div id="spoiler">
+      <div>Ei.</div>
+      <img src="docs/assets/images/sylvi.jpg" width="500" height="600">
+    </div>
   </body>
 </html>
