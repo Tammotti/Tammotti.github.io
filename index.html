@@ -2,17 +2,25 @@
   <head>
     <style>
     body {
+      width: 100%;
       display: flex;
       align-items: center;
       flex-direction: column;
       margin: 20px;
     }
+    
+    #spoiler {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
     </style>
   </head>
   <body>
     <h1>Onko bebelssoni jo syntynyt?</h1>
     <button title="vastaus" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Vastaus</button>
-    <div id="spoiler">
+    <div id="spoiler" style="display:none">
       <div>Ei.</div>
       <img src="docs/assets/images/sylvi.jpg" width="500" height="600">
     </div>
